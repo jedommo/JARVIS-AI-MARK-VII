@@ -1,0 +1,8 @@
+PySide6
+SpeechRecognition
+pyttsx3
+pyaudio
+open-interpreter
+chromadb
+langdetect
+requests
