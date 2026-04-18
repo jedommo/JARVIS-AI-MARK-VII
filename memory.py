@@ -14,27 +14,20 @@ class Memory:
         try:
             with open(MEMORY_FILE, 'r+', encoding='utf-8') as f:
                 data = json.load(f)
-                entry = {
-                    "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                data.append({
+                    "time": datetime.now().strftime("%H:%M"),
                     "user": user_input,
                     "jarvis": ai_response
-                }
-                data.append(entry)
-                if len(data) > 50:
-                    data = data[-50:]
+                })
+                if len(data) > 50: data = data[-50:]
                 f.seek(0)
                 json.dump(data, f, indent=4, ensure_ascii=False)
                 f.truncate()
-        except Exception as e:
-            print(f"Memory Save Error: {e}")
+        except: pass
 
     def get_context(self):
         try:
             with open(MEMORY_FILE, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-                context = ""
-                for entry in data[-5:]:
-                    context += f"User: {entry['user']}\nJarvis: {entry['jarvis']}\n"
-                return context
-        except:
-            return ""
+                return "\n".join([f"U: {e['user']} | J: {e['jarvis']}" for e in data[-3:]])
+        except: return ""

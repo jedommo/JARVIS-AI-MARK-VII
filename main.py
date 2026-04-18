@@ -5,12 +5,6 @@ from PySide6.QtWidgets import QApplication
 from PySide6.QtQml import QQmlApplicationEngine
 from PySide6.QtCore import QObject, Slot, Signal
 
-try:
-    import pkg_resources
-except:
-    import subprocess
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "setuptools<=69.5.1"])
-
 from voice_engine import VoiceEngine
 from ai_core import AICore
 from memory import Memory

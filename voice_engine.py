@@ -12,13 +12,11 @@ class VoiceEngine:
             engine.say(text)
             engine.runAndWait()
             engine.stop()
-        except:
-            pass
+        except: pass
 
     def listen(self):
         with sr.Microphone() as source:
             try:
                 audio = self.r.listen(source, timeout=5, phrase_time_limit=8)
                 return self.r.recognize_google(audio)
-            except:
-                return None
+            except: return None
