@@ -1,44 +1,34 @@
-# JARVIS AI - MARK VII 🚀
-An advanced, holographic AI Assistant inspired by Iron Man's JARVIS. Built with **Python**, **PySide6 (QML)**, and powered by **GPT-4o** via OpenRouter.
+# JARVIS AI - MARK VII (Final Edition) 🚀
 
-## 🌟 Features
-- **Holographic RGB Interface**: A stunning Arc Reactor HUD with real-time RGB animations using Canvas.
-- **AI Memory & Learning**: JARVIS remembers your past conversations and learns from your technical preferences (stored in `memory.json`).
-- **Voice & Text Interaction**: Talk to JARVIS or type your commands. He responds with both voice and a terminal-style text display.
-- **Tech Specialist**: Optimized for software developers, capable of assisting with iOS tools, Docker, and VB.NET.
+An advanced, holographic AI Assistant inspired by the **Iron Man** HUD system. This project integrates a sophisticated **Grid-based UI** with an **Autonomous AI Core** that learns and remembers your preferences.
 
-## 🛠 Tech Stack
-- **Language**: Python 3.12
-- **UI Framework**: PySide6 (Qt for Python) / QML
-- **AI Core**: Open Interpreter (GPT-4o / OpenRouter)
-- **Voice Engine**: pyttsx3 & SpeechRecognition
+## ✨ Final Version Features
+- **Advanced HUD Interface**: A professional high-tech grid background with interactive holographic elements.
+- **Dynamic Arc Reactor**: A multi-layered animated core that reacts to processing, listening, and speaking states.
+- **Smart Memory System**: Uses a local JSON-based long-term memory to learn from user habits and technical preferences.
+- **Diagnostic Mode**: Clean error handling that prevents system crashes and provides technical status updates.
+- **Voice & Terminal Hybrid**: Seamlessly switch between voice commands and keyboard inputs.
 
-## 🚀 Getting Started
+## 🛠 Project Structure
+- `main.py`: The system's central engine and bridge between AI and UI.
+- `main.qml`: The holographic HUD design (Canvas & Animations).
+- `ai_core.py`: The brain (Powered by GPT-4o / OpenRouter).
+- `memory.py`: Persistent storage for learning and context.
+- `voice_engine.py`: Audio processing for speech-to-text and text-to-speech.
 
-### Prerequisites
-- Python 3.12+
-- OpenRouter API Key
-
-### Installation
-1. Clone the repo:
+## 🚀 How to Run
+1. **Clone the project**:
    ```bash
    git clone [https://github.com/jedommo/JARVIS-AI-MARK-VII.git](https://github.com/jedommo/JARVIS-AI-MARK-VII.git)
-Install dependencies:
+Setup your API Key:
+In ai_core.py, replace the api_key with your OpenRouter key.
 
-Bash
-pip install -r requirements.txt
-Set your API Key in ai_core.py:
-
-Python
-interpreter.llm.api_key = "YOUR_API_KEY"
-Run JARVIS:
+Launch:
 
 Bash
 python main.py
-📸 Interface Preview
-(Add a screenshot of your app here to make it look even cooler!)
+📸 Final Interface Preview
+⚖️ License
+This project is open-source and intended for educational and creative purposes.
 
-📜 License
-This project is for educational purposes. Inspired by the Marvel Cinematic Universe.
-
-![alt text](Screenshot_1-1.png)
+![alt text](Screenshot_1.png)
