@@ -3,7 +3,7 @@ from interpreter import interpreter
 class AICore:
     def __init__(self, memory):
         self.memory = memory
-        interpreter.llm.api_key = "YOUR API KEY"
+        interpreter.llm.api_key = "YOUR_API_KEY"
         interpreter.llm.api_base = "https://openrouter.ai/api/v1"
         interpreter.llm.model = "openai/gpt-oss-120b:free"
         interpreter.api_key = interpreter.llm.api_key

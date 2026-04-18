@@ -41,4 +41,4 @@ python main.py
 📜 License
 This project is for educational purposes. Inspired by the Marvel Cinematic Universe.
 
-![alt text](Screenshot_1.png)
+![alt text](Screenshot_1-1.png)
